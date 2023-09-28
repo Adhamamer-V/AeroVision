@@ -43,11 +43,6 @@ body {
 }
 
 /* Responsive Container Sizes */
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
 
 @media (min-width: 992px) {
   .container {
@@ -491,3 +486,235 @@ header .container .Toggle-Menu img {
 }
 
 /* About Me End  */
+
+/* Services */
+/* Global Styles */
+.Services {
+  padding: 100px 81px;
+}
+
+.Services .container .Services-Content {
+  position: relative;
+}
+
+.Services .container .Services-Content .title {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  text-align: center;
+}
+
+.Services .container .Services-Content .title .Heading-p {
+  color: var(--maincolor);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.Services .container .Services-Content .title h1 {
+  color: var(--dark-brown);
+  line-height: 50px;
+  white-space: nowrap;
+}
+
+.Services .container .Services-Content .title h1,
+.Services .container .Services-Content .title h1 span {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.Services .container .Services-Content .title h1 span {
+  color: var(--maincolor);
+  line-height: 50px;
+}
+
+.Services .container .Services-Content .title .Disc {
+  color: #222;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  white-space: nowrap;
+}
+
+.Services .container .Services-Content .title h1,
+.Services .container .Services-Content .title .Disc,
+.Services .container .Services-Content .title .Heading-p {
+  padding-bottom: 15px;
+}
+
+.nav-caursel {
+  position: relative;
+  padding-top: 30px;
+}
+
+.arrows {
+  width: fit-content;
+  position: absolute;
+  right: 0;
+}
+
+.arrows img {
+  cursor: pointer;
+}
+
+.arrows .arrow-left {
+  padding-right: 20px;
+}
+
+.skills-container {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Website and App Design Styles */
+.Website-App-desgin {
+  background: var(--maincolor);
+}
+
+.Website-App-desgin .Head-text {
+  color: #fff;
+}
+
+.Website-App-desgin .head-describtion {
+  color: var(--white);
+}
+
+.Website-App-desgin,
+.Strategic-Marketing {
+  border-radius: 10px;
+  display: flex;
+  width: 406px;
+  padding: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.Website-App-desgin img,
+.Strategic-Marketing img {
+  margin-bottom: 30px;
+}
+
+.skills-container .Head-text {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.1px;
+}
+
+.skills-container .head-describtion {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.1px;
+}
+
+.learn-more {
+  position: relative;
+  bottom: 0;
+  background-color: transparent;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.1px;
+  cursor: pointer;
+}
+
+.learn-more img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+}
+
+/* Strategic Marketing Styles */
+.Strategic-Marketing {
+  border-radius: 10px;
+  margin-left: 30px;
+  border: 1px solid #ddd;
+  background: var(--white);
+}
+
+.Strategic-Marketing .learn-more {
+  color: #07f;
+}
+
+.Strategic-Marketing .learn-more img {
+  filter: invert(32%) sepia(62%) saturate(5175%) hue-rotate(204deg)
+    brightness(106%) contrast(104%);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .arrows {
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+
+  .Strategic-Marketing {
+    display: none;
+  }
+
+  .skills-container .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Services .container .Services-Content .title h1 {
+    white-space: normal;
+  }
+
+  .Services .container .Services-Content .title .Disc {
+    white-space: normal;
+  }
+}
+
+/* Media query for screens up to 300px */
+@media (max-width: 300px) {
+  .Services h1 {
+    font-size: 40px !important;
+  }
+
+  .Services .Disc {
+    font-size: 14px;
+  }
+
+  .skills-container > div {
+    margin: 10px;
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .skills-container .Head-text {
+    font-size: 20px;
+  }
+
+  .skills-container .head-describtion {
+    font-size: 14px;
+  }
+
+  .learn-more {
+    font-size: 16px;
+  }
+}
+
+.skills-container .container {
+  display: flex;
+}
+
+@media (max-width: 454px) {
+  .skills-container .container {
+    width: 170%;
+  }
+}
+@media (min-width: 768px) {
+  .skills-container .container {
+    width: 100%;
+  }
+}
+/* Services end */
