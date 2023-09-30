@@ -16,6 +16,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 ul {
@@ -28,6 +29,11 @@ button {
 
 body {
   font-family: "Work Sans", sans-serif;
+}
+
+img::selection {
+  background-color: transparent;
+  color: transparent;
 }
 
 ::selection {
@@ -717,4 +723,144 @@ header .container .Toggle-Menu img {
     width: 100%;
   }
 }
+
+/* Responsive Container Sizes */
+
 /* Services end */
+
+/* Achevements section */
+.Achievements {
+  background-color: var(--maincolor);
+  position: relative;
+  padding: 100px;
+}
+
+.Achievements .container .achevement-text {
+  width: fit-content;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.Achievements .container .achevement-text p {
+  color: #e9efff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.Achievements .container .achevement-text h1 {
+  color: var(--white);
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px; /* 100% */
+  padding-top: 24px;
+}
+
+.Achievements .container .achievements-boxs {
+  padding: 110px 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.Achievements .container .achievements-boxs .box {
+  padding: 30px;
+  gap: 15px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #fff;
+  margin-left: 30px;
+}
+
+.Achievements .container .achievements-boxs .box h1 {
+  color: var(--nav-links-color);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px; /* 100% */
+}
+
+.Achievements .container .achievements-boxs .box p {
+  color: var(--nav-links-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 1360px) {
+  .container {
+    width: 100%; /* Change to full width for screens smaller than 1360px */
+  }
+}
+
+@media (max-width: 1200px) {
+  .Achievements .container .achievements-boxs {
+    flex-direction: column; /* Stack boxes vertically */
+    align-items: center; /* Center align boxes */
+    text-align: center;
+    padding: 30px 0; /* Reduce vertical padding */
+  }
+
+  .Achievements .container .achievements-boxs .box {
+    width: 100%; /* Full width for each box */
+    margin-left: 0; /* Remove horizontal margin */
+    margin-bottom: 20px; /* Add some spacing between boxes */
+  }
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 1200px) {
+  .Achievements .container .achievements-boxs .box {
+    padding: 20px; /* Reduce padding */
+  }
+
+  .Achievements .container .achievements-boxs .box h1 {
+    font-size: 2em; /* Reduce font size */
+  }
+
+  .Achievements .container .achievements-boxs .box p {
+    font-size: 18px; /* Reduce font size */
+  }
+}
+@media (max-width: 1263px) {
+  .Achievements .container .achevement-text h1 {
+    font-size: 40px; /* Reduce font size */
+    line-height: 40px; /* Adjust line height */
+    padding-top: 20px; /* Reduce padding */
+  }
+
+  .Achievements .container .achievements-boxs .box {
+    padding: 20px; /* Reduce padding */
+  }
+
+  .Achievements .container .achievements-boxs .box h1 {
+    font-size: 35px; /* Reduce font size */
+    line-height: 35px; /* Adjust line height */
+  }
+
+  .Achievements .container .achievements-boxs .box p {
+    font-size: 11px; /* Reduce font size */
+  }
+}
+
+/* Media query for screens smaller than 1360px */
+@media (max-width: 1380px) {
+  .Achievements .container .achievements-boxs .box {
+    padding: 25px; /* Adjust padding */
+    width: fit-content;
+  }
+
+  .Achievements .container .achievements-boxs .box p {
+    font-size: 16px; /* Adjust font size */
+  }
+}
+
+@media (max-width: 400px) {
+  .Achievements .container .achievements-boxs .box h1 {
+    font-size: 200%; /* Reduce font size */
+  }
+}
+
+/* Achevements section end */
